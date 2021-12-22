@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Awesome App</title>
+</head>
+<body>
+
+	<h1>Welcome, Employee</h1>
+	<h3>Please login below</h3>
+
+	<form method="POST" action="login"> <!-- The post request will be sent to http://localhost:8080/FrontControllerDemo/login -->
+
+		<label>Username</label> 
+		<input type="text" name="username" placeholder="Please enter your username"> 
+		<br />
+		<label>Password</label>
+		<input type="password" name="password" placeholder="Please enter your password">
+		
+		<input type="submit" value="Login!"> 
+	</form>
+	
+	<!-- A new button, if someone clicks this butotn they recieve all employees in the DB -->
+		<br />	
+		<br />
+	<form method="GET" action="employees">
+	<p>To see all employees in this system please click button bellow</p>
+	<input type="submit" value="Click me!">
+	</form>
+	
+</body>
+</html>
