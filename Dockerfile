@@ -11,4 +11,4 @@ EXPOSE 8080
 
 # The CMD instruction specifies what to run when the containter is run.
 # In this case, the tomcat server is started by running the following slell script:
-CMD ["catalina.sh". "run"]
+CMD ["catalina.sh", "run"]
