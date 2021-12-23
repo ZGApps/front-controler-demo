@@ -1,7 +1,7 @@
 # Here we call the base image, a tomcat server compatible with JDK 8
 FROM tomcat:8.0-jre8
 
-LABEL maintaner="Zak Appleton"
+LABEL maintainer="Zak Appleton"
 
 # Copy the .war file to the tomcat webapps directory
 ADD target/FrontControllerDemo.war /usr/local/tomcat/webapps/
